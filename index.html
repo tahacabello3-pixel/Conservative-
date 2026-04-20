@@ -456,7 +456,7 @@
                     text += `${letter}) ${opt}\n`;
                 });
             }
-            text += `\nالإجابة الصحيحة: ${q.correct}\n\nبواسطة: zik0d`;
+            text += `\nالإجابة الصحيحة: ${q.correct}\n\nبواسطة: @zik0d`;
             
             if (navigator.share) {
                 navigator.share({
@@ -465,7 +465,7 @@
                 }).catch(console.error);
             } else {
                 navigator.clipboard.writeText(text).then(() => {
-                    alert('تم نسخ تفاصيل السؤال للمشاركة (zik0d)!');
+                    alert('تم نسخ تفاصيل السؤال للمشاركة (@zik0d)!');
                 });
             }
         }
@@ -482,7 +482,7 @@
                 }
                 text += `الإجابة: ${q.correct}\n\n`;
             });
-            text += `بواسطة: zik0d`;
+            text += `بواسطة: @zik0d`;
             navigator.clipboard.writeText(text).then(() => {
                 alert('تم نسخ جميع أسئلة الشيت بنجاح!');
             });
